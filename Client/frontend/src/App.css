@@ -1,0 +1,81 @@
+/* Add these styles to your CSS file */
+.question-form-container {
+  background-color: rgb(34, 33, 33);
+  color: #fff; /* White text for readability */
+  padding: 1em; /* Add some padding */
+
+}
+
+.loading-gear {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.message-group {
+  background: rgba(255, 255, 255, 0.1); /* Slightly lighter background for the messages */
+  padding: 1em;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 1em;
+}
+
+.user-question,
+.ai-answer {
+  background: rgba(255, 255, 255, 0.05); /* Even lighter background for individual messages */
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+.user-question {
+  margin-bottom: 0.5em;
+}
+
+.error-message {
+  color: #ff3860; /* Red color for error messages */
+  margin-top: 1em;
+}
+
+
+
+/* Additional styles for the TextInput and Button components may be needed
+   depending on how they are styled by the flowbite-react library. */
+
+.loading-gear {
+  font-size: 24px; /* Adjust the size as needed */
+  animation: rotateGear 2s linear infinite;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@keyframes rotateGear {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.question-form input{
+  padding-right: 300px;
+  background-color: #fff;
+
+}
+form{
+  position: fixed;
+  top: 93%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+@media (max-width: 1268px) {
+  form{
+    display: flex;
+    position: fixed;
+    top: 95%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+
+
